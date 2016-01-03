@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio</title>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
+ 
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  
+  <!--CS Modal-->
+  <div class="modal fade" id="csModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Web Development</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+          <img class="img-responsive" src="images/cs.png" alt="cs image">
+          </div>
+          <br>
+          <p>My GitHub is home to my numerous projects and learning experiences as I advance my career in web development.  Please feel free to explore and leave feedback. 
+          </p>     
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary"><a class="link" href="https://github.com/anyamitsukai">Visit Website</a></button>
+        </div>
+      </div> <!--./modal-content-->
+    </div> <!--./modal-dialog-->
+  </div> <!--./modal-->
+
+  <!--PA Modal-->
+  <div class="modal fade" id="otherModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">My Day Job</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+          <img class="img-responsive" src="images/pa.jpg" alt="physician assistant image">
+          </div>
+          <br>
+          <p>I am a physician assistant.  It's hard work, but rewarding.  The medical industry has gone technical, but the tech industry does not understand medicine.  My goal is to be part of the movement to help bridge that gap as we accelerate this new generation of medicine.  
+          </p>     
+        </div>
+      </div> <!--./modal-content-->
+    </div> <!--./modal-dialog-->
+  </div> <!--./modal-->
+
+<!--About Me Modal-->
+  <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">About Me</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+          <img class="img-responsive" src="images/scuba.jpg" alt="scuba diving image">
+          </div>
+          <br>
+          <p>When I am not practicing medicine or developing web apps, I am usually exploring a distant corner of the world or learning new talents.  From snowboarding glaciers in Canada to scuba diving underwater caverns in Mexico, I'm always up for an adventure.</p>     
+        </div>
+      </div> <!--./modal-content-->
+    </div> <!--./modal-dialog-->
+  </div> <!--./modal-->
+
+<!--Container-->
+  <div class="container-fluid">
+    <div class="row"> <!--header-->
+      <div class="col-xs-3">
+        <img class="img-responsive logo" src="images/logo.png" alt="logo image">
+       </div> 
+      <div class="col-xs-9">
+        <h1 class="text-right header">Tira Wickland</h1>
+      </div>
+    </div> <!--/.row header-->
+    <div class="row"> <!--image-->
+      <div class="col-md-12">
+        <img class="img-responsive main-img" src="images/main.jpg" alt="main image">
+      </div>
+    </div><!--./row image-->
+    <div class="row"> <!--title-->
+      <div class="col-xs-12">
+        <h2 class="text-left">My Portfolio</h2>
+      </div>
+    </div><!--./row title-->
+    <div class="row" id="examples"> <!--examples-->
+      <div class="col-sm-4 col-xs-12">
+        <div>
+          <!--Trigger modal-->
+          <a data-target="#csModal" role="button" data-toggle="modal">
+          <img class="img-responsive" src="images/cs.png" alt="cs image">
+          </a>
+        </div>
+        <div class="text-center">        
+          <h3 class="examples">Web Development</h3>
+        </div> 
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div>
+          <!--Trigger Modal-->
+          <a data-target="#otherModal" role="button" data-toggle="modal">
+          <img class="img-responsive" src="images/pa.jpg" alt="physician assistant image">
+          </a>
+        </div>
+        <div class="text-center">
+          <h3 class="examples">My Day Job</h3>
+        </div>  
+      </div>  
+      <div class="col-sm-4 col-xs-12">
+        <div>
+          <!--Trigger modal-->
+          <a data-target="#aboutModal" role="button" data-toggle="modal">
+          <img class="img-responsive" src="images/scuba.jpg" alt="scuba diving image">
+          </a>
+        </div>
+        <div class="text-center">
+          <h3 class="examples">About Me</h3>
+        </div> 
+      </div> 
+    </div> <!--/.row eamples-->
+  </div> <!--/.container-->
+</body>
+</html>
